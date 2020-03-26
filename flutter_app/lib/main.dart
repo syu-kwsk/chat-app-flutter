@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/layout.dart';
-import 'package:flutter_app/tapbutton.dart';
-import 'package:flutter_app/interactive.dart';
 import 'package:flutter_app/navigate.dart';
+import 'package:flutter_app/buttomnavi.dart';
 
 void main() => runApp(MyApp());
 
@@ -15,7 +13,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter demo',
       initialRoute: '/',
       routes: {
-        '/': (context) => FirstRoute(),
+        '/': (context) => TopPage(),
         '/second': (context) => SecondRoute(),
       },
     );

@@ -64,7 +64,7 @@ class Layout extends StatelessWidget {
       ),
     );
 
-    return  Column(
+    return  ListView(
           children: <Widget>[
             Image.asset(
               'images/lake.jpg',
