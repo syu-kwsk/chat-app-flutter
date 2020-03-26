@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_app/layout.dart';
 import 'package:flutter_app/tapbutton.dart';
 import 'package:flutter_app/interactive.dart';
+import 'package:flutter_app/map.dart';
 
 
 class TopPage extends StatefulWidget {
@@ -51,7 +52,7 @@ class _TopPageState extends State<TopPage> {
         controller: _pageController,
         onPageChanged: onPageChanged,
         children: [
-          new TapboxA(),
+          new MyMap(),
           new Layout(),
           new ParentWidgetB(),
         ],
