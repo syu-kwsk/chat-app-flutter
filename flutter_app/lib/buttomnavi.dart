@@ -54,18 +54,18 @@ class _TopPageState extends State<TopPage> {
         children: [
           new MyMap(),
           new Layout(),
-          new MyDialog(title: 'hoge', desc: 'hugahuga', icon: Icons.event,),
+          new MyDialog(title: 'hoge', desc: 'hugahuga', icon: Icons.event, color: Colors.red,),
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.map),
-            title: Text('EventMap'),
+            title: Text('CampusMap'),
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.group),
-            title: Text('ClubDetail'),
+            title: Text('ClubList'),
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.message),
