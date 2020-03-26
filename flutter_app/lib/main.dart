@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/layout.dart';
 import 'package:flutter_app/tapbutton.dart';
+import 'package:flutter_app/interactive.dart';
 
 void main() => runApp(MyApp());
 
@@ -20,7 +21,8 @@ class MyApp extends StatelessWidget {
             Layout(),
             TapboxA(),
             ParentWidgetB(),
-            ParentWidgetC()
+            ParentWidgetC(),
+            FormWidget(),
           ],
         )
       ),
