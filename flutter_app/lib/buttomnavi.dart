@@ -3,6 +3,7 @@ import 'package:flutter_app/layout.dart';
 import 'package:flutter_app/tapbutton.dart';
 import 'package:flutter_app/interactive.dart';
 import 'package:flutter_app/map.dart';
+import 'package:flutter_app/chat.dart';
 
 
 class TopPage extends StatefulWidget {
@@ -54,7 +55,7 @@ class _TopPageState extends State<TopPage> {
         children: [
           new MyMap(),
           new Layout(),
-          new MyDialog(title: 'hoge', desc: 'hugahuga', icon: Icons.event, color: Colors.red,),
+          new MyChat(),
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
