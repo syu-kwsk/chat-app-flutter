@@ -13,21 +13,11 @@ class MyApp extends StatelessWidget {
     //return Layout();
     return MaterialApp(
       title: 'Flutter demo',
-      home: Scaffold(
-        appBar: AppBar(
-            title: Text('Flutter demo')
-        ),
-        body: ListView(
-          children: <Widget>[
-            Layout(),
-            TapboxA(),
-            ParentWidgetB(),
-            ParentWidgetC(),
-            FormWidget(),
-            FirstRoute(),
-          ],
-        )
-      ),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => FirstRoute(),
+        '/second': (context) => SecondRoute(),
+      },
     );
   }
 }
