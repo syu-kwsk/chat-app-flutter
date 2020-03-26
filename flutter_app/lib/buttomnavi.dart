@@ -54,7 +54,7 @@ class _TopPageState extends State<TopPage> {
         children: [
           new MyMap(),
           new Layout(),
-          new ParentWidgetB(),
+          new MyDialog(title: 'hoge', desc: 'hugahuga', icon: Icons.event,),
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
